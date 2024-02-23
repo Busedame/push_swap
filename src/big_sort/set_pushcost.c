@@ -54,10 +54,8 @@ void	ft_reset_pushcost(t_list **x)
 
 void	ft_pushcost_to_a(t_list **a, t_list **b)
 {
-	t_list	*curr_a;
 	t_list	*curr_b;
 
-	curr_a = *a;
 	curr_b = *b;
 	ft_median_and_currpos(a, b);
 	while (curr_b)
@@ -76,10 +74,8 @@ void	ft_pushcost_to_a(t_list **a, t_list **b)
 void	ft_pushcost_to_b(t_list **a, t_list **b)
 {
 	t_list	*curr_a;
-	t_list	*curr_b;
 
 	curr_a = *a;
-	curr_b = *b;
 	ft_median_and_currpos(a, b);
 	while (curr_a)
 	{
