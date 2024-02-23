@@ -64,7 +64,6 @@ void	ft_target_node_in_a(t_list **a, t_list **b)
 	long	closest_greater;
 
 	curr_b = *b;
-	i = 0;
 	ft_reset_targets(b);
 	while (curr_b)
 	{
