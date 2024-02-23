@@ -53,19 +53,26 @@ NAME=push_swap
 
 all:	$(NAME)
 
+# Compiling the object files and making an executable.
 $(NAME):	$(OBJ)
 			@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
+# Making a build directory to store the object files if the build directory
+# doesn't exist.
 build:	
 		@if [ ! -d "build" ]; \
 			then mkdir -p "build"; \
 		fi
 
+# Making the subdirectories in the build-directory, and compiling the source files,
+# making them object files.
 build/%.o: src/%.c
 		@mkdir -p $(dir $@)
 		@echo "Compiling \e[1;32m$(notdir $<)\e[0m"
 		@$(CC) $(CFLAGS) -Iinc -c $< -o $@;
 
+# Running Valgrind in two ways, with and without double quotation marks
+# (argc == 2 or argc > 2), to check for memory leaks.
 leaks: all
 		@echo "\e[1;93mRunning Valgrind with double quotation marks\e[0m"
 		@valgrind ./push_swap "$(shell seq 1 500 | shuf | tr '\n' ' ')" 2>&1 \
@@ -74,6 +81,8 @@ leaks: all
 		@valgrind ./push_swap $(shell seq 1 500 | shuf | tr '\n' ' ') 2>&1 \
 		| grep -A 9999999 "HEAP SUMMARY" | grep -B 9999999 "ERROR SUMMARY"
 
+# Checking how many operations are being done to sort the numbers,
+# when the program is run with 5, 100 and 500 random values.
 test_operations: all
 		@echo "\e[1;93mRunning test with 5 random values\e[0m"
 		@./push_swap "$(shell seq 1 5 | shuf | tr '\n' ' ')" | wc -l
@@ -82,6 +91,9 @@ test_operations: all
 		@echo "\e[1;93mRunning test with 500 random values\e[0m"
 		@./push_swap "$(shell seq 1 500 | shuf | tr '\n' ' ')" | wc -l
 
+# The checker_linux is a binary file for checking the different operations being done by my program.
+# It checks if the list of operations being output by my program will actually sort the numbers. 
+# It will output either "OK" or "KO". 
 test_sort: all checker_linux
 		@RANDOM_SEQUENCE="$(shell seq 1 5 | shuf | tr '\n' ' ')"; \
 		echo "\e[1;93mRunning test with 5 random values\e[0m"; \
@@ -113,6 +125,7 @@ test_sort: all checker_linux
 			echo "\e[91mKO\e[0m"; \
 		fi
 
+# Testing input handling, the program should output "Error" upon duplicates, a too large number or non-integer characters.
 test_errors: all
 		@echo "\e[1;93mRunning test with duplicates\e[0m"
 		@echo "Input: 1 2 3 3 4"
@@ -124,16 +137,20 @@ test_errors: all
 		@echo "Input: 1 2 a b c"
 		@./push_swap "1 2 a b c" || true
 
+# Cleans up all the object files, but not the build-directory, or the 
+# subdirectories inside.
 clean:
 	@rm -f build/*.o
 	@rm -f build/*/*.o
 	@echo "\e[1;32mAll object files removed\e[0m"
 
+# Cleans up all object files, and their directory, and removes the executable.
 fclean:
 	@rm -rf build
 	@rm -f $(NAME)
 	@echo "\e[1;32mBuild directory and executable removed\e[0m"
 
+# Cleans up everything and compiles everything again.
 re: fclean all
 
 .PHONY: all clean fclean re
