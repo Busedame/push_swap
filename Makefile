@@ -125,7 +125,10 @@ test_sort: all checker_linux
 			echo "\e[91mKO\e[0m"; \
 		fi
 
-# Testing input handling, the program should output "Error" upon duplicates, a too large number or non-integer characters.
+# Testing input handling, the program should output "Error" upon duplicates, 
+# a too large number or non-integer characters. If the input is valid,
+# the program should output a list of instructions. If there is no input, or
+# the numbers are already sorted, the program should stop and give the prompt back.
 test_errors: all
 		@echo "\e[1;93mRunning test with duplicates\e[0m"
 		@echo "Input: 1 2 3 3 4"
@@ -137,14 +140,14 @@ test_errors: all
 		@echo "Input: 1 2 a b c"
 		@./push_swap "1 2 a b c" || true
 
-# Cleans up all the object files, but not the build-directory, or the 
+# Cleans up all the object files, but not the build-directory or the 
 # subdirectories inside.
 clean:
 	@rm -f build/*.o
 	@rm -f build/*/*.o
 	@echo "\e[1;32mAll object files removed\e[0m"
 
-# Cleans up all object files, and their directory, and removes the executable.
+# Cleans up all object files and the build-directory, and removes the executable.
 fclean:
 	@rm -rf build
 	@rm -f $(NAME)
