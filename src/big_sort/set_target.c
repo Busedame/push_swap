@@ -60,12 +60,9 @@ static void	get_target_in_a(t_list **a, t_list *curr_b, long closest_greater)
 
 void	ft_target_node_in_a(t_list **a, t_list **b)
 {
-	t_list	*curr_a;
 	t_list	*curr_b;
-	int		i;
 	long	closest_greater;
 
-	curr_a = *a;
 	curr_b = *b;
 	i = 0;
 	ft_reset_targets(b);
@@ -82,13 +79,9 @@ void	ft_target_node_in_a(t_list **a, t_list **b)
 void	ft_target_node_in_b(t_list **a, t_list **b)
 {
 	t_list	*curr_a;
-	t_list	*curr_b;
-	int		i;
 	long	closest_lower;
 
 	curr_a = *a;
-	curr_b = *b;
-	i = 0;
 	ft_reset_targets(a);
 	while (curr_a)
 	{
