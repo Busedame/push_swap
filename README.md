@@ -78,12 +78,12 @@ there should be no more than 5500 operations.
 After some research online, I came across an algorithm called the **turk algorithm**.
 It turned out to be super efficient, and secured me a maximum score in the push_swap project (100).
 
-**These are the key points of the turk algorithm 🔑**  
+#### **These are the key points of the turk algorithm 🔑**  
 
 Since the numbers in stack a and stack b are stored in a *linked list structure*, I will
 refer to numbers as *nodes*.
 
-Main structure:
+**Main structure:**
 1. Push all nodes from stack a to b, until there are *only three nodes left in stack a*.
 2. During this process, the nodes are sorted in *descending order* in stack b.
 3. When there are only three nodes left in stack a, sort them in *ascending order*.
@@ -91,7 +91,7 @@ Main structure:
 💡 **Note**: To determine which nodes are getting pushed, we use the concepts *target node*
 and *cheapest node*.
 
-**Target node**
+**Target node:**
 - When pushing a node from stack a to stack b -- the *closest smaller* node in stack b to the
 node from stack a. If no node in stack b is smaller than the node from stack a, then the target
 node is the *max* value.
@@ -99,7 +99,7 @@ node is the *max* value.
 node from stack b. If no node in stack a is bigger than the node from stack b, then the target
 node is the *min* value.
 
-**Cheapest node**
+**Cheapest node:**
 - When a node is getting pushed from one stack to the other, we want to calculate the cheapest
 node to push.
 - The cheapest node means that it requires *the least amount of operations*.
