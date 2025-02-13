@@ -44,11 +44,23 @@ In the context of push_swap, we start off with a set of numbers and two stacks:
 - Stack B 📦 – Used as a temporary workspace to assist with sorting.
 
 Since the numbers are placed in a stack, only the number on the top can be accessed.
-Luckily we have some operations to assist us in bringing our desired number to the top.
+Luckily, we have some operations to assist us in bringing our desired number to the top.
 - sa, sb, ss 🔄 – Swap the top two elements of a stack.
 - pa, pb 📤📥 – Push an element from one stack to another.
 - ra, rb, rr 🔃 – Rotate (shift elements upward, moving the first to the last).
 - rra, rrb, rrr 🔄 – Reverse rotate (shift elements downward, moving the last to the first).
+
+The program is structured with separate sorting algorithms for different *amounts* of numbers.
+"Small sort algorithms" are implemented for 2, 3, 4 and 5 numbers, and a "big sort algorithm"
+is implemented for > 5 numbers.  
+
+**Some other factors taken into consideration:**
+- If the numbers are already sorted, no operations are output, because no operations
+were needed.
+The program prints "Error\n" if: 
+- There were duplicate numbers (3 3 5 4).
+- Non-integer arguments were found (10 A 32 9).
+- Any numbers are outside of integer range (5 241412515151524214 124 -1).
 
 The function is declared like this:
 ```bash
