@@ -3,7 +3,7 @@
 **In this README:**
 1. Introduction to the project
 2. The turk algorithm
-3. Alternative algorithms
+3. Testing out push_swap
 4. Included files
 5. Cloning the repository
 6. How to compile and run
