@@ -48,7 +48,7 @@ Luckily, we have some operations to assist us in bringing our desired number to 
 - sa, sb, ss 🔄 – Swap the top two elements of a stack.
 - pa, pb 📤📥 – Push an element from one stack to another.
 - ra, rb, rr 🔃 – Rotate (shift elements upward, moving the first to the last).
-- rra, rrb, rrr 🔄 – Reverse rotate (shift elements downward, moving the last to the first).
+- rra, rrb, rrr 🔃 – Reverse rotate (shift elements downward, moving the last to the first).
 
 The program is structured with separate sorting algorithms for different *amounts* of numbers.
 - "Small sort algorithms" are implemented for 2, 3, 4 and 5 numbers.
