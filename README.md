@@ -141,7 +141,6 @@ One way to get a better visualization is to see how many operations were done
 by piping the output into `wc -l`.
 ```bash
 $> ./push_swap 9 2 1 5 3 | wc -l
-8
 ```
 In this repo there is also a `checker_linux` file, which will check if the operations
 done output by `push_swap` are actually sorting the numbers.
