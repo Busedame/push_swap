@@ -212,3 +212,5 @@ git clone https://github.com/busedame/push_swap/ push_swap && cd push_swap
 	```bash
 	./push_swap <numbers, separated by space>
  	```
+
+This project was finished Feb 27th 2024.
