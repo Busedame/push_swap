@@ -39,6 +39,8 @@ of each other. Think of a stack of plates. You would only be able to remove the
 plate on the top -- if you try to remove a plate from anywhere else, the pile of plates
 would potentially fall.
 
+---
+
 ### **The rules of the project**
 
 In the context of push_swap, we start off with a set of numbers and two stacks:
@@ -133,6 +135,8 @@ https://medium.com/@ayogun/push-swap-c1f5d2d41e97
 - I followed this YouTube tutorial by @Thuggonaut: https://www.youtube.com/watch?v=wRvipSG4Mmk&t=512s.
 The tutorial gives an excellent walkthrough of the key concepts, and also gives some ideas about how to
 code it.
+
+---
 
 ### **Testing out push_swap**
 As mentioned earlier, when the program is ran, it only prints out a list of operations.
