@@ -54,7 +54,7 @@ The program is structured with separate sorting algorithms for different *amount
 - "Small sort algorithms" are implemented for 2, 3, 4 and 5 numbers.
 - A "big sort algorithm" is implemented for > 5 numbers.  
 
-**Error handling:**  
+**❌Error handling:**  
 The program prints "Error\n" if: 
 - There were duplicate numbers (3 3 5 4).
 - Non-integer arguments were found (10 A 32 9).
