@@ -76,8 +76,7 @@ there should be no more than 5500 operations.
 ```
 
 After some research online, I came across an algorithm called the **turk algorithm**.
-It turned out to be super efficient, and secured me a maximum score in the push_swap project (without
-bonus).
+It turned out to be super efficient, and secured me a maximum score in the push_swap project (100).
 
 **These are the key points of the turk algorithm:**  
 
