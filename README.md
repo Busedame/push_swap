@@ -2,13 +2,11 @@
 
 **In this README:**
 1. Introduction to the project
-2. What is a stack?
-3. Allowed operations
-4. The turk algorithm
-5. Alternative algorithms
-6. Included files
-7. Cloning the repository
-8. How to compile and run
+2. The turk algorithm
+3. Alternative algorithms
+4. Included files
+5. Cloning the repository
+6. How to compile and run
 
 ## 🚀 **Project Overview**  
 The project involves creating a program that sorts a stack of numbers in ascending order, with a limited 
@@ -62,6 +60,73 @@ The program prints "Error\n" if:
 
 If the numbers are already sorted, there is no output, because no operations
 were needed.  
+
+---
+
+### **The turk algorithm**
+
+`push_swap` is limited both when it comes to which operations are allowed, but
+also *how many* operations are allowed for a set amount of numbers.
+The subject gave the following requirements:
+```bash
+- For a minimalist validation (that implies a minimal grade of 80), you must be
+able to sort 100 random numbers in fewer than 700 operations.
+- For maximal project validation you must fulfill the first step above, but also for 500 random numbers, 
+there should be no more than 5500 operations.
+```
+
+After some research online, I came across an algorithm called the **turk algorithm**.
+It turned out to be super efficient, and secured me a maximum score in the push_swap project (without
+bonus).
+
+**These are the key points of the turk algorithm:**  
+
+Since the numbers in stack a and stack b are stored in a *linked list structure*, I will
+refer to numbers as *nodes*.
+
+Main structure:
+1. Push all nodes from stack a to b, until there are *only three nodes left in stack a*.
+2. During this process, the nodes are sorted in *descending order* in stack b.
+3. When there are only three nodes left in stack a, sort them in *ascending order*.
+4. Push the nodes back from stack b to stack a, so they are all sorted in *ascending order*.
+💡 **Note**: To determine which nodes are getting pushed, we use the concepts *target node*
+and *cheapest node*.
+
+**Target node**
+- When pushing a node from stack a to stack b -- the *closest smaller* node in stack b to the
+node from stack a. If no node in stack b is smaller than the node from stack a, then the target
+node is the *max* value.
+- When pushing a node from stack b to stack a -- the *closest bigger* nide in stack a to the
+node from stack b. If no node in stack a is bigger than the node from stack b, then the target
+node is the *min* value.
+
+**Cheapest node**
+- When a node is getting pushed from one stack to the other, we want to calculate the cheapest
+node to push.
+- The cheapest node means that it requires *the least amount of operations*.
+```bash
+Say we want to push a node from stack a to stack b.
+We iterate through our stack a to see which node is cheapest to push, depending
+on where it needs to go in stack b, to maintain the descending order in stack b.
+
+The calculation will be based on this:
+1. How many operations are needed to get the node in stack a to the top.
+2. How many operations are needed to get the target node in stack b to the top.
+
+Once we have iterated through all of stack a, and found the node that requires
+the least amount of operations -- we do the operations and push the node from stack
+a to stack b. 
+```
+
+The algorithm can be a bit hard to wrap your head around, without a more visual explanation.
+Please have a look at these resources for more information:
+
+- A. Yigit Ogun came up the "turk algorithm" while working with push_swap. Have a look at this
+Medium article, where both the push_swap project and the algorithm is thoroughly explained:
+https://medium.com/@ayogun/push-swap-c1f5d2d41e97  
+- I followed this YouTube tutorial by @Thuggonaut: https://www.youtube.com/watch?v=wRvipSG4Mmk&t=512s.
+The tutorial gives an excellent walkthrough of the key concepts, and also gives some ideas about how to
+code it.
 
 The function is declared like this:
 ```bash
