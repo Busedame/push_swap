@@ -147,12 +147,6 @@ done output by `push_swap` are actually sorting the numbers.
 ```bash
 $>ARG="4 67 3 87 23"; ./push_swap $ARG | ./checker_linux $ARG
 ```
--> Check out this webpage to avoid typing the numbers you want to test manually:
-https://www.calculatorsoup.com/calculators/statistics/random-number-generator.php
-
--> Also check out this repo by @o-reo for a true visualization of what is actually happening:
-https://github.com/o-reo/push_swap_visualizer
-
 If you want to print out the numbers AFTER they are sorted, follow these steps:
 1. Go to the file `src/helper_functions/sorting_check.c`
 2. In the first function `ft_finish_sort()`, add a print statement.
@@ -178,6 +172,12 @@ void	ft_finish_sort(t_list **a)
 	exit(0);
 }
 ```
+-> Check out this webpage to avoid typing the numbers you want to test manually:
+https://www.calculatorsoup.com/calculators/statistics/random-number-generator.php
+
+-> Also check out this repo by @o-reo for a true visualization of what is actually happening:
+https://github.com/o-reo/push_swap_visualizer
+
 ---
 
 ## 🧰 **Included Files**  
