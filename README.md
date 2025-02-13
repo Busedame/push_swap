@@ -137,23 +137,23 @@ code it.
 As mentioned earlier, when the program is ran, it only prints out a list of operations.
 This is not very rewarding, and can also be cryptic when dealing with large sets of numbers.
 
-One way to get a better visualization is to see how many operations were done 
+-> One way to get a better visualization is to see how many operations were done 
 by piping the output into `wc -l`.
 ```bash
 $> ./push_swap 9 2 1 5 3 | wc -l
 ```
-In this repo there is also a `checker_linux` file, which will check if the operations
+-> In this repo there is also a `checker_linux` file, which will check if the operations
 done output by `push_swap` are actually sorting the numbers.
 ```bash
 $>ARG="4 67 3 87 23"; ./push_swap $ARG | ./checker_linux $ARG
 ```
-Check out this webpage to avoid typing the numbers you want to test manually:
+-> Check out this webpage to avoid typing the numbers you want to test manually:
 https://www.calculatorsoup.com/calculators/statistics/random-number-generator.php
 
-Also check out this repo by @o-reo for a true visualization of what is actually happening:
+-> Also check out this repo by @o-reo for a true visualization of what is actually happening:
 https://github.com/o-reo/push_swap_visualizer
 
-If you want to print out the numbers AFTER they are sorted, follow these steps:
+-> If you want to print out the numbers AFTER they are sorted, follow these steps:
 1. Go to the file `src/helper_functions/sorting_check.c`
 2. In the first function `ft_finish_sort()`, add a print statement.
 ```bash
