@@ -126,7 +126,7 @@ a to stack b.
 The algorithm can be a bit hard to wrap your head around, especially without a more visual explanation.
 Please have a look at these resources for more information:
 
-- A. Yigit Ogun came up the "turk algorithm" while working with push_swap. Have a look at this
+- A. Yigit Ogun came up with the "turk algorithm" while working with push_swap. Have a look at this
 Medium article, where both the push_swap project and the algorithm is thoroughly explained:
 https://medium.com/@ayogun/push-swap-c1f5d2d41e97  
 - I followed this YouTube tutorial by @Thuggonaut: https://www.youtube.com/watch?v=wRvipSG4Mmk&t=512s.
