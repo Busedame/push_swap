@@ -213,4 +213,4 @@ git clone https://github.com/busedame/push_swap/ push_swap && cd push_swap
 	./push_swap <numbers, separated by space>
  	```
 
-This project was finished Feb 27th 2024.
+*This project was finished Feb 27th 2024.*
