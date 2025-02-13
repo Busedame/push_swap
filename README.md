@@ -93,10 +93,10 @@ refer to numbers as *nodes*.
 and *cheapest node*.
 
 **Target node:**
-- When pushing a node from stack a to stack b -- the *closest smaller* node in stack b to the
+- When pushing a node from stack a to stack b -- the target node is the *closest smaller* node in stack b to the
 node from stack a. If no node in stack b is smaller than the node from stack a, then the target
 node is the *max* value.
-- When pushing a node from stack b to stack a -- the *closest bigger* nide in stack a to the
+- When pushing a node from stack b to stack a -- the target node is the *closest bigger* node in stack a to the
 node from stack b. If no node in stack a is bigger than the node from stack b, then the target
 node is the *min* value.
 
