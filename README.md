@@ -88,6 +88,7 @@ refer to numbers as *nodes*.
 2. During this process, the nodes are sorted in *descending order* in stack b.
 3. When there are only three nodes left in stack a, sort them in *ascending order*.
 4. Push the nodes back from stack b to stack a, so they are all sorted in *ascending order*.  
+
 💡 **Note**: To determine which nodes are getting pushed, we use the concepts *target node*
 and *cheapest node*.
 
