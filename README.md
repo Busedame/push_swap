@@ -99,6 +99,7 @@ node is the *max* value.
 - When pushing a node from stack b to stack a -- the target node is the *closest bigger* node in stack a to the
 node from stack b. If no node in stack a is bigger than the node from stack b, then the target
 node is the *min* value.
+- Clarification: The node we want to push should be on the *top* of the target node.
 
 **Cheapest node:**
 - When a node is getting pushed from one stack to the other, we want to calculate the cheapest
