@@ -1,5 +1,6 @@
 # 📚🔀📚 **push_swap - Sorting numbers with limited moves!**
 
+Project was finished Feb 27th 2024.
 **In this README:**
 1. Introduction to the project
 2. The rules of the project
