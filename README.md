@@ -36,6 +36,8 @@ of each other. Think of a stack of plates. You would only be able to remove the
 plate on the top -- if you try to remove a plate from anywhere else, the pile of plates
 would potentially fall.
 
+### **The rules of the project**
+
 In the context of push_swap, we start off with a set of numbers and two stacks:
 - Numbers 🔢 – A set of numbers. E.g. {5, 2, 1, -3, 7, 3}
 - Stack A 📚 – Initially holds all the unsorted numbers.
