@@ -119,7 +119,7 @@ the least amount of operations -- we do the operations and push the node from st
 a to stack b. 
 ```
 
-The algorithm can be a bit hard to wrap your head around, without a more visual explanation.
+The algorithm can be a bit hard to wrap your head around, especially without a more visual explanation.
 Please have a look at these resources for more information:
 
 - A. Yigit Ogun came up the "turk algorithm" while working with push_swap. Have a look at this
