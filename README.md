@@ -11,7 +11,7 @@
 8. How to compile and run
 
 ## 🚀 **Project Overview**  
-The project involves sorting a *stack* of numbers in ascending order, with a limited 
+The project involves creating a program that sorts a stack of numbers in ascending order, with a limited 
 set (and amount) of operations allowed.
 
 The program is run like this:
