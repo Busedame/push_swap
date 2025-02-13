@@ -59,7 +59,7 @@ The program prints "Error\n" if:
 - There were duplicate numbers (3 3 5 4).
 - Non-integer arguments were found (10 A 32 9).
 - Any numbers are outside of integer range (5 241412515151524214 124 -1).
-If the numbers are already sorted, no operations are output, because no operations
+If the numbers are already sorted, there is no output, because no operations
 were needed.  
 
 The function is declared like this:
