@@ -2,11 +2,12 @@
 
 **In this README:**
 1. Introduction to the project
-2. The turk algorithm
-3. Testing out push_swap
-4. Included files
-5. Cloning the repository
-6. How to compile and run
+2. The rules of the project
+3. The turk algorithm
+4. Testing out push_swap
+5. Included files
+6. Cloning the repository
+7. How to compile and run
 
 ## 🚀 **Project Overview**  
 The project involves creating a program that sorts a stack of numbers in ascending order, with a limited 
