@@ -51,8 +51,8 @@ Luckily, we have some operations to assist us in bringing our desired number to 
 - rra, rrb, rrr 🔄 – Reverse rotate (shift elements downward, moving the last to the first).
 
 The program is structured with separate sorting algorithms for different *amounts* of numbers.
-"Small sort algorithms" are implemented for 2, 3, 4 and 5 numbers, and a "big sort algorithm"
-is implemented for > 5 numbers.  
+- "Small sort algorithms" are implemented for 2, 3, 4 and 5 numbers.
+- A "big sort algorithm" is implemented for > 5 numbers.  
 
 **Error handling:**  
 The program prints "Error\n" if: 
