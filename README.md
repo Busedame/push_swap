@@ -169,7 +169,7 @@ void	ft_finish_sort(t_list **a)
 	t_list	*current; // Make a temporary pointer to not lose access to address of a.
 
 	current = *a;
-	while (current) Add this while loop. The program will first print operations, then the numbers.
+	while (current) // Add this while loop. The program will first print operations, then the numbers.
 	{
 		ft_printf("%i\n", current->value);
 		current = current->next;
