@@ -166,10 +166,13 @@ void	ft_finish_sort(t_list **a)
 ```bash
 void	ft_finish_sort(t_list **a)
 {
-	while (*a) // Add this while loop. The program will first print operations, then the numbers.
+	t_list	*current; // Make a temporary pointer to not lose access to address of a.
+
+	current = *a;
+	while (current) Add this while loop. The program will first print operations, then the numbers.
 	{
-		ft_printf("%i\n", (*a)->value);
-		(*a) = (*a)->next;
+		ft_printf("%i\n", current->value);
+		current = current->next;
 	}
 	ft_free_stack(*a);
 	exit(0);

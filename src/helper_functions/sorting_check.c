@@ -6,7 +6,7 @@
 /*   By: nholbroo <nholbroo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 16:31:20 by nholbroo          #+#    #+#             */
-/*   Updated: 2025/02/13 15:23:12 by nholbroo         ###   ########.fr       */
+/*   Updated: 2025/02/13 15:34:50 by nholbroo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@
 
 void	ft_finish_sort(t_list **a)
 {
-	while (*a)
-	{
-		ft_printf("%i\n", (*a)->value);
-		(*a) = (*a)->next;
-	}
 	ft_free_stack(*a);
 	exit(0);
 }
