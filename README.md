@@ -1,13 +1,38 @@
 # 📚🔀📚 **push_swap - Sorting numbers with limited moves!**
 
 **In this README:**
-1. Introduction to the project
-2. The rules of the project
-3. The turk algorithm
-4. Testing out push_swap
-5. Included files
-6. Cloning the repository
-7. How to compile and run
+1. Included files
+2. Cloning the repository
+3. How to compile and run
+4. Introduction to the project
+5. The rules of the project
+6. The turk algorithm
+7. Testing out push_swap
+
+## 🧰 **Included Files**  
+- All source files in directory `src`
+- Two header files in `inc`
+- A Makefile
+- `checker_linux` used for testing if sorting is correct.
+
+## 🧑‍💻 **Cloning the Repository**
+
+To get started, first clone the repository.
+This command will clone the repo, and move you to the right directory:
+```bash
+git clone https://github.com/busedame/push_swap/ push_swap && cd push_swap
+```
+
+## 🖥️ **How to Compile and Run**  
+
+1. Compile using this command:
+	```bash
+	make
+	```
+2. Run using this command:
+	```bash
+	./push_swap <numbers, separated by space>
+ 	```
 
 ## 🚀 **Project Overview**  
 The project involves creating a program that sorts a stack of numbers in ascending order, with a limited 
@@ -184,33 +209,5 @@ https://www.calculatorsoup.com/calculators/statistics/random-number-generator.ph
 https://github.com/o-reo/push_swap_visualizer
 
 ---
-
-## 🧰 **Included Files**  
-- All source files in directory `src`
-- Two header files in `inc`
-- A Makefile
-- `checker_linux` used for testing if sorting is correct.
-
----
-
-## 🧑‍💻 **Cloning the Repository**
-
-To get started, first clone the repository.
-This command will clone the repo, and move you to the right directory:
-```bash
-git clone https://github.com/busedame/push_swap/ push_swap && cd push_swap
-```
----
-
-## 🖥️ **How to Compile and Run**  
-
-1. Compile using this command:
-	```bash
-	make
-	```
-2. Run using this command:
-	```bash
-	./push_swap <numbers, separated by space>
- 	```
 
 *This project was finished Feb 27th 2024.*
